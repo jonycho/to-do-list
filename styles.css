@@ -10,7 +10,6 @@ body{
     background-color: lightseagreen;
     display: flex;
     min-height: 100vh;
-    gap:10px;
     flex-wrap: wrap;
 }
 
