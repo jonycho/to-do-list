@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 10px;
+    line-height: 1.5;
+    background-color: lightseagreen;
+    display: flex;
+    min-height: 100vh;
+    gap:10px;
+    flex-wrap: wrap;
+}
+
+body,input, textarea,button{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color:darkslategrey;
+    text-align: center;
+}
+
+.container{
+    background-color: white;
+    /* margin:30px auto; */
+    padding:30px;
+    flex: 1 350px;
+}
+
+
+.derecha{
+    background-color: #98DFD6;
+    padding: 10px;
+    flex: 1 50%;
+}
+
+form{
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+input{
+    padding:15px 10px;
+    flex:1;
+    outline:none;
+}
+textarea{
+    height: 100px;
+    padding: 10px;
+}
+
+ul{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+li{
+    padding: 10px;
+    background-color: #FFDD83;
+    box-shadow: 0 2px 2px rgb(0,0,0,0.3);
+    border: 1px solid #ccc;
+display: flex;
+flex-direction: column;
+margin-bottom:10px;
+flex:1 350px;
+
+}
+li h2{
+    font-size: 1.25em;
+    color: #00235B;
+}
+
+li p{
+    border-radius: 5px;
+padding: 5px;
+margin:0;
+flex:1;
+font-size:0.85em;
+color: #2D2727;
+}
+
+.btn-add{
+    padding: 5px 15px;
+    background-color: rgb(90, 150, 150);
+    border:none;
+    color:white;
+    outline: none;
+    cursor: pointer;
+    margin-bottom:10px;
+    align-self: center;
+    box-shadow: 0 2px 0px black;
+}
+
+.btn-add:hover{
+    background-color:rgb(21, 34, 34);
+}
+
+.empty p{
+    color:#00235B;
+}
+
+.btn-delete{
+padding: 5px 15px;
+font-size:1.25em;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    background: none;
+    align-self: end;
+    color: #E21818;
+}
+
+.btn-delete:hover{
+    color:#666;
+}
+
+.urgente{
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.5em;
+    margin-left: 5px;
+}
