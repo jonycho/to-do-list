@@ -24,9 +24,10 @@ h1{
 
 .container{
     background-color: white;
-    /* margin:30px auto; */
     padding:30px;
     flex: 1 350px;
+    flex-direction: column;
+    display: flex;
 }
 
 
@@ -63,14 +64,14 @@ textarea{
 }
 
 
-ul{
+.li-container{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap:10px;
 }
 
-li{
+.li-container li{
     padding: 10px;
     box-shadow: 0 2px 2px rgb(0,0,0,0.3);
     border: 1px solid #ccc;
@@ -80,12 +81,12 @@ margin-bottom:10px;
 flex:1 350px;
 
 }
-li h2{
+.li-container li h2{
     font-size: 1.25em;
     color: #00235B;
 }
 
-li p{
+.li-container li p{
     border-radius: 5px;
 padding: 5px;
 margin:0;
@@ -184,4 +185,34 @@ label{
 
 .opcional{
     font-size: 0.75em;
+}
+
+.author{
+    align-self: end;
+    flex: 1;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+}
+
+h4{
+    font-size: 0.75em;
+    
+}
+
+.redes{
+    list-style: none;
+    padding: 0;
+    margin-left: 5px;
+    display: flex;
+    gap:5px;
+}
+
+.redes a{
+    color:#2D2727;
+}
+
+.redes a:hover{
+    color:rgb(90, 150, 150);
 }
