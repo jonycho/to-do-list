@@ -9,4 +9,5 @@ https://list-tareas-js.netlify.app/
 
 ## Screenshots 🖼️
 
-![Lista de Tareas](https://user-images.githubusercontent.com/121981717/225153011-161b4e96-d491-41e6-ab0e-f15c73052efb.png)
+![Lista de Tareas](https://user-images.githubusercontent.com/121981717/225336819-6e042ddf-f64a-4ad5-8ecb-83627c9b8132.png)
+
