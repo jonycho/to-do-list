@@ -13,7 +13,7 @@ body{
     flex-wrap: wrap;
 }
 
-body,input, textarea,button{
+body,input, textarea,button, select{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -43,15 +43,25 @@ form{
     flex-wrap: wrap;
 }
 
-input{
+input[type="text"]{
     padding:15px 10px;
     flex:1;
     outline:none;
+    border-radius: 5px;
+    border: 1px solid grey;
 }
+input[type="text"]:focus, textarea:focus{
+    border: 1px solid darkslategrey;
+}
+
 textarea{
     height: 100px;
     padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
 }
+
 
 ul{
     padding: 0;
@@ -62,7 +72,6 @@ ul{
 
 li{
     padding: 10px;
-    background-color: #FFDD83;
     box-shadow: 0 2px 2px rgb(0,0,0,0.3);
     border: 1px solid #ccc;
 display: flex;
@@ -120,11 +129,59 @@ font-size:1.25em;
     color:#666;
 }
 
-.urgente{
-    background-color: red;
+.urgente, .claseUno, .claseDos, .claseTres{
     padding: 5px;
     border-radius: 5px;
     color: white;
     font-size: 0.5em;
     margin-left: 5px;
+}
+
+.urgente{
+    background-color: red;
+}
+
+.claseUno{
+    background-color:#00235B;
+    color:white;
+}
+.claseDos{
+    background-color:#2D2727;
+    color:white;
+}
+.claseTres{
+    background-color: #666;
+    color:black;
+}
+
+.containerCategoria, .containerColor{
+    display: flex;
+    align-items: center;
+    background-color: rgb(90, 150, 150);
+    padding: 5px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+}
+
+label{
+    font-size: 0.85em;
+    margin-right: 20px;
+    padding: 5px;
+    flex: 1;
+}
+
+#categoria{
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+}
+
+#colorPick{
+    width: 60px;
+    height: 22px;
+}
+
+.opcional{
+    font-size: 0.75em;
 }

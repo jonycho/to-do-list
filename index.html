@@ -15,14 +15,32 @@
             <form>
                 <input type="text" id="tituloTarea" placeholder="Agrega el titulo...">
                 <textarea placeholder="Agrega un comentario"></textarea>
+                
+                <div class="containerCategoria">
+                    <label for="categoria">Categoría *</label>
+                    <select id="categoria">
+                        <option value="default">Seleccionar categoría</option>
+                        <option value="paraayer">Como para ayer</option>
+                        <option value="hoy">Hoy si o si</option>
+                        <option value="programar">Programar</option>
+                    </select>
+                </div>
+                
+                <div class="containerColor">
+                    <label for="colorPick">Color del Post-It *</label>
+                    <input type="color" id="colorPick" value="#FFDD83" />
+                    
+                </div>
+                
                 <div>
-                    <input type="checkbox" name="urgente" id="urgenteCheck"> <label for="urgenteCheck">¿Es urgente?</label> 
+                    <input type="checkbox" name="urgente" id="urgenteCheck"> <label for="urgenteCheck">¿Es urgente? *</label> 
                 </div>
                 <button class="btn-add">Agregar tarea</button>
             </form>
+            <p class="opcional">* Elementos opcionales</p>
         </div>
     </div>
-    
+
     <div class="derecha">
         <div class="li-container">
             <ul>
