@@ -95,9 +95,8 @@ font-size:0.85em;
 color: #2D2727;
 }
 
-.btn-add{
+.btn-add, .btn-add-fav{
     padding: 5px 15px;
-    background-color: rgb(90, 150, 150);
     border:none;
     color:white;
     outline: none;
@@ -107,8 +106,18 @@ color: #2D2727;
     box-shadow: 0 2px 0px black;
 }
 
+.btn-add{
+    background-color: rgb(90, 150, 150);
+}
+.btn-add-fav{
+    background-color: rgb(150, 90, 90);
+}
+
 .btn-add:hover{
     background-color:rgb(21, 34, 34);
+}
+.btn-add-fav:hover{
+    background-color:rgb(107, 65, 65);
 }
 
 .empty p{
@@ -155,11 +164,11 @@ font-size:1.25em;
     color:black;
 }
 
-.containerCategoria, .containerColor{
+.containerCategoria, .containerColor, .containerFavoritos{
     display: flex;
     align-items: center;
     background-color: rgb(90, 150, 150);
-    padding: 5px;
+    padding: 5px 10px;
     height: 50px;
     border-radius: 5px;
     color: white;
@@ -167,12 +176,10 @@ font-size:1.25em;
 
 label{
     font-size: 0.85em;
-    margin-right: 20px;
-    padding: 5px;
     flex: 1;
 }
 
-#categoria{
+#categoria, #favoritos{
     padding: 5px;
     outline: none;
     border-radius: 5px;
@@ -215,4 +222,34 @@ h4{
 
 .redes a:hover{
     color:rgb(90, 150, 150);
+}
+
+.containerFavoritos{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    background-color: #2D2727;
+    color:white;
+}
+
+
+.containerFavoritos button{
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.containerFavoritos label{
+    flex:none;
+}
+.containerFavoritos button:hover{
+    background-color: #98DFD6;
+}
+.fa-star{
+    color:#FFD43B;
+}
+
+.buttons{
+    align-self: center;
 }
