@@ -74,7 +74,7 @@ function addDeleteBtn(){
             const elem = e.target.parentElement
             ul.removeChild(elem) 
 
-            const countLi = document.querySelectorAll('li')
+            const countLi = document.querySelectorAll('#post li')
 
             if(countLi.length ===0){
                 empty.style.display = "block"
