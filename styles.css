@@ -64,14 +64,14 @@ textarea{
 }
 
 
-.li-container{
+#post{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap:10px;
 }
 
-.li-container li{
+#post li{
     padding: 10px;
     box-shadow: 0 2px 2px rgb(0,0,0,0.3);
     border: 1px solid #ccc;
@@ -81,12 +81,12 @@ margin-bottom:10px;
 flex:1 350px;
 
 }
-.li-container li h2{
+#post li h2{
     font-size: 1.25em;
     color: #00235B;
 }
 
-.li-container li p{
+#post li p{
     border-radius: 5px;
 padding: 5px;
 margin:0;
